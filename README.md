@@ -11,16 +11,9 @@ This repository contains the homework for Week 6 of the **SECPlayground Security
 
 Follow the steps below to set up the environment using Docker:
 
-### Step 1: Clone the repository
+### Step 1: Clone the Repository
 
 Clone this repository to your local machine using the following command:
 
 ```bash
 git clone https://github.com/proaii/SECP-HW6.git
-
-### Step 2: Navigate to the Project Directory
-
-Change into the project directory:
-
-```bash
-cd SECP-HW6
