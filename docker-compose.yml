@@ -109,6 +109,22 @@ services:
     volumes:
       - "graylog_data:/usr/share/graylog/data/data"
     restart: "on-failure"
+    
+  dvwa:
+    image: vulnerables/web-dvwa
+    container_name: dvwa
+    ports:
+      - "8080:80"
+    environment:
+      - MYSQL_RANDOM_ROOT_PASSWORD=yes
+    networks:
+      - graylog
+    restart: "on-failure"
+    logging:
+      driver: "syslog"
+      options:
+        syslog-address: "udp://0.0.0.0:5140"
+        tag: "dvwa"
 
 networks:
   graylog:
