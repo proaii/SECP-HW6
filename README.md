@@ -66,7 +66,7 @@ For this web server we will use
 http://localhost:80
 ```
 
-### Step 7: Clean Up
+###Clean Up (Optional)
 
 Once you're done and want to stop and remove the running containers, run the following command:
 
